@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      footer {
+        position: relative;
+        bottom: 0px;
+        left: 5px;
+        margin-top: 20px;
+        border: 3px inset rgba(235, 65, 65, 0.74);
+        background-color: rgba(235, 65, 65, 0.74);
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      nav {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            border:3px; 
+            margin-right: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 20px;
+            font-size: 15pt;
+            margin-bottom: 5px;
+            position: fixed;
+            background-color: rgb(151, 55, 76);
+            text-align: center;
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: sandybrown;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(216, 135, 59);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .special-edition {
+          float: left;
+          position: fixed; 
+          margin-top: 200px;
+          margin-bottom: 100px;
+          margin-left: 5px;
+          margin-right: 5px;
+          width: 18%;
+          padding: 10px;
+          background-color: sandybrown;
+          text-align: center;
+        }
+
+      .flexbox-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        background-color: rgb(20, 46, 71);
+      }
+
+      .flexbox-item {
+        width: 320px;
+        margin: 10px;
+        border: 3px solid sandybrown;
+        background-color: rgb(151, 55, 76);
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="author"
+      content="Αριαδνη Γιαννακοπουλου Μαριαννα Μπελεγρατη Σοφια Σωτηριου"
+    />
+    <title>Εκδοχες του παιχνιδιου</title>
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=NtNMlcUDfilRl_F_zjm07vnuMeFQWYewXgBvgvym12TlOoRpUB99NBcANlCsEjbUhGsmlj25F_vHEGOjlS2dShyFgTDQ8p0cEwDkNzX6H4wa3Uhc6JnJyKnQgMEXxGZgNBda9JHZRImYKLVhp9S_Jr0kGExMyWJPQ1lmD4-PjbwsjEohtbLxyC3s4luAchcvXEG9zzkfr9eEKS11w9Z2jEpKVbBnnNWaC7SbDFCRNqjNqsxXn66oLyFjJ0A_AR8CDReR8j-y8lkhTcV_20LbjVzwk7jIdZht6JxKHagl3KLZ7UzfvoopEgs9rQGMYUoZihatgQP8vKpTlqBuwJBk1f3-J25fxWk5NCQ5ddvHyAB7YDaIAGhT6vTLDcLtAHjBS2pG_mnIYEbgWFL6L-gOAqxajRbfJj0mVjt29AKJVgxjXU4lIn0w-LdmLZ-oKYKKLgWRgSJDQQ8yzKEcUR4hRqsrwHJ28fEIk9faEKvKqIbulrdVwjNLa8M7_X51XBPg-jiTTL929OnXSp5gwAvSD8SQgrPv1QFnh8BIcHarlGPrb8bCDNz_MVjwsqMcTHPVxHvbmgaxAktazRuqz7YPfzqO6IkUZ7PL6EnQScotdFqmvmjGyDdIFh5niXLN-JpN8sWg_mzWnDFlw3GpqcWAbDRN9osEOx9cx84hPyuJJqGUSEfYIu_uzQ-uB_krfSy8WO4dKDkNWVMXkTTpwQ0yslRIYA4CQ75XeUuISioT1UUegAj5oUJS9zEdvkLKy28TOMrtjKLbnB10fIgwYjXBGRF-xbtIHKQCx01ChnH3SRh7J-9qE2d7EgIhaUTJa6xMNu5N3prTKJ0Caxev9IHbK4v2iygYJXefUpWCJ5GR8-K00upVPsFHubzuWVMID3bKYS1MorvjLi2UBgmXpPVWMgCJuAWGPnRELduAH6nInge-KGfVz2kuzReSBZcTLUj3W2EbdfMRZZVQD7eN6PDws7a4aU9FqOjry1sklkJi8OPsiaQRyZ3c9ppYz9xlBCWAAqcZKan4Uo-Lq2_-_W1WsLEOg-8btWCvrfwwhBT_FYoFHz-WfsGd9cIibC_tEiYUgu_q0VggW7mjxAYM6t7Wb2f9VW5vTBHgAk-APAI-z3UNCMiOa58TP7StIIqe1jSM8VdZNZYX1ENkjZLAoLjWk8EQiFFiAV4jzBPwKKELJbxzEW0WtCElfOwJEycIgTsjftZ4HkmdAkNO2BY7hqgauQ"
+      nonce="0e35032a83ea4ca936fdb614e353da22"
+      charset="UTF-8"
+    ></script>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Αρχική</a>
+            </li>
+            <li>
+                <a href="">Η ιστορία της Μονόπολης</a>
+            </li>
+            <li>
+                <a href="">Οδηγίες και κανόνες παιχνιδιού</a>
+            </li>
+            <li>
+                <a href="">Στρατηγικές και κόλπα</a>
+            </li>
+            <li>
+                <a href="">Οι εκδοχές του παιχνιδιού</a>
+            </li>
+            <a href="">Επικοινωνία</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="special-edition">
+      <img
+        src="https://c.scdn.gr/images/sku_main_images/032391/32391789/xlarge_20211117093245_hasbro_epitrapezio_paichnidi_monopoly_85th_anniversary_edition_gia_2_8_paiktes_8_eton_e9983.jpeg"
+        alt="happy anniversary"
+        style= "width: 85%"
+      />
+      <h2>Monopoly 85TH Anniversary Edition</h2>
+      <p>
+         Αίγλη, λάμψη και χρυσά πιόνια! ¨Ετσι γιορτάζει η MONOPOLY 85 χρόνια επιτυχίας.
+         Γιορτάστε και εσείς με τη νέα ανανεωμένη έκδοση με πιόνια τα οποιά αντιπροσωπέυουν 
+         τη καλή ζωήΣυγκεντρώστε την οικογένεια και τους φίλους σας για να παίξουν το γρήγορο
+         παιχνίδι συναλλαγών ακινήτων όπου οι παίκτες αγοράζουν, πουλάνε, ονειρεύονται και
+         σχεδιάζουν τον δρόμο τους προς τα πλούτη.  
+      </p>
+    </div>
+    <div class="flexbox-container">
+      <div class="row1">
+        <div class="column1">
+          <div class="flexbox-item flexbox-item-1">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1267165/epitrapezio-monopoly-classic-new-edition-1000-1267165.jpg"
+              alt="original"
+              style="width: 100%"
+            />
+            <h3>Αυθεντική Monopoly</h3>
+            <p>Η νέα έκδοση του κλασσικού παιχνιδιού με νέα πιόνια</p>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="flexbox-item flexbox-item-2">
+            <img
+              src="https://b.scdn.gr/images/sku_main_images/024523/24523278/20201008170116_hasbro_monopoly_super_electronic_banking.jpeg"
+              alt="ΗλΤραπ"
+              style="width: 70%"
+            />
+            <h4>Monopoly Ηλεκτρονική Εξαργύρωση</h4>
+            <p>
+              Στη νεα Monopoly Super Elect Banking δεν υπάρχουν χρήματα! Υπάρχει
+              μόνο το ηλεκτρονικό μηχάνημα αφής που κάνει το παιχνίδι πιο
+              γρήγορο και διασκεδαστικό. Σε κάθε παίχτη αντιστοιχεί μία
+              τραπεζική κάρτα. Μπορείτε να σκανάρετε τις κάρτες ιδιοκτησίας στο
+              ηλεκτρονικό μηχάνημα. Παίξτε το παιχνίδι και ανακαλύψτε τις νέες
+              κάρτες και διασκεδάστε περισσότερο!
+            </p>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="flexbox-item flexbox-item-3">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1483733/epitrapezio-monopoly-speed-1000-1483733.jpg"
+              alt="Speed"
+              style="width: 100%"
+            />
+            <h4>Monopoly Ταχύτητας</h4>
+            <p>
+              Δεν έχετε πολύ χρόνο; Κανένα πρόβλημα! Για να παίξετε το
+              επιτραπέζιο Monopoly Ταχύτητας χρειάζεστε λιγότερο από 10 λεπτά!
+              Όλοι οι παίκτες ρίχνουν το ζάρι και αγοράζουν ταυτόχρονα, οπότε
+              δεν χρειάζεται να περιμένετε τη σειρά σας. Στη διάρκεια 4 γύρων,
+              οι παίκτες αγωνίζονται ενάντια στον χρόνο για να αγοράσουν, να
+              ανταλλάξουν και να πουλήσουν τις ιδιοκτησίες τους πιο γρήγορα από
+              ποτέ. Ο χρόνος μετράει αντίστροφα για κάθε στάδιο αγοραπωλησίας.
+            </p>
+          </div>
+        </div>
+        <div class="column4">
+          <div class="flexbox-item flexbox-item-4">
+            <img
+              src="https://static-v3.e-jumbo.gr/uploads/resources/267591/5010993717248_01-thumb.jpg?lm=1A78616D272946D49C7E0C6413818BED "
+              alt="Lucky"
+              style="width: 100%"
+            />
+            <h4>Monopoly Τυχεροί Ηττημένοι</h4>
+            <p>
+              Μην στεναχωριέστε αν χάσετε… απλώς παίξτε ξανά! Πείτε αντίο στην
+              απογοήτευση της ήττας όταν παίζετε Monopoly και καλωσορίστε το
+              επιτραπέζιο παιχνίδι Monopoly Για Τυχερούς Ηττημένους. Αυτή η
+              ξεκαρδιστική εκδοχή του παιχνιδιού Monopoly κοροϊδεύει την ήττα
+              και τη μετατρέπει σε γιορτή. Οι παίκτες κερδίζουν χρήματα όταν
+              κάνουν τις κινήσεις που θεωρούνται ατυχείς στην κανονική εκδοχή,
+              όπως όταν πηγαίνουν Φυλακή, πληρώνουν ενοίκιο για μια ιδιοκτησία ή
+              πτωχεύουν. Και όσοι αρχίσουν πραγματικά να βουλιάζουν στα χρέη,
+              μπορούν να ανακάμψουν χρησιμοποιώντας το μεγάλο πιόνι Mr. Monopoly
+              που τους δίνει πλεονέκτημα έναντι όλων των άλλων παικτών.
+            </p>
+          </div>
+        </div>
+        <div class="column5">
+          <div class="flexbox-item flexbox-item-5">
+            <img 
+              src="https://static-v3.e-jumbo.gr/uploads/resources/299777/5010993880478_01-thumb.jpg?lm=DB57C9DDD6922433B7B66DD7A11BF04D"
+              alt="Fake money"
+              style="width: 100%"
+            />
+            <h4>Monopoly Βρες τα Πλαστά </h4>
+            <p>
+              Στο παιχνίδι Monopoly Βρες Τα Πλαστά, τα πράγματα δεν είναι πάντα όπως 
+              φαίνονται. Κάποιος πρόσθεσε πλαστά χαρτονομίσματα και κάρτες Εντολής! 
+              Ευτυχώς, ο Mr. Monopoly προσφέρει στους παίκτες τον αποκωδικοποιητή του
+              για να ξεχωρίζουν τα πλαστά στοιχεία και να μπορέσουν να κερδίσουν μια
+              περιουσία. Πρόκειται για ένα συναρπαστικό παιχνίδι με κρυμμένες αποκαλύψεις, 
+              όπου οι παίκτες κατηγορούν τους αντιπάλους τους ότι χρησιμοποιούν πλαστά 
+              στοιχεία με τις μάρκες κατηγορίας. Προσέξτε όμως να μην τις χρησιμοποιήσετε
+              απερίσκεπτα! Γιατί υπάρχουν μόνο λίγες στη διάθεσή σας. Ο παίκτης με τα
+              περισσότερα χρήματα στο τέλος του παιχνιδιού - πλαστά ή αληθινά - είναι ο νικητής.
+            </p>
+          </div>
+        </div>
+        <div class="column6">
+          <div class="flexbox-item flexbox-item-6">
+            <img
+              src="https://a.scdn.gr/images/sku_main_images/000034/34899/xlarge_132007026.jpg"
+              alt="Modern Greece"
+              style="width: 100%"
+            />
+            <h4>Monopoly Σύγχρονη Ελλάδα</h4>
+            <p>
+              Η πρώτη έκδοση Monopoly που δεν έχει χρήματα αλλά όλες οι συναλλαγές γίνονται
+              μέσω πιστωτικών καρτών! Τώρα δεν χτίζεις σπίτια και ξενοδοχεία αλλά διαμερίσματα 
+              και ουρανοξύστες και στο τέλος μπορείς να περάσεις μια όμορφη βραδιά στο Μέγαρο 
+              Μουσικής ή να παραθερίσεις στην Μύκονο!
+            </p>
+          </div>
+        </div>
+        <div class="column7">
+            <div class="flexbox-item flexbox-item-7"> 
+                <img 
+                    src="https://static-v3.e-jumbo.gr/uploads/resources/188757/5010993511396_01-thumb.jpg?lm=1F886D428C96838F582A5A472CF4E9D9"
+                    alt=" cheat"
+                    style="width: 100%"
+                />
+                <h4>Monopoly της ζαβολιάς</h4>
+                <p> 
+                  Μπορείς να κερδίσεις τη Monopoly με ζαβολιές; Κλέψε για να 
+                  μπορέσεις να βγεις μπροστά και ταυτόχρονα τσάκωσε τους υπόλοιπους 
+                  όταν κλέβουν. Πρόσεχε όμως γιατί και οι αντίπαλοί σου θέλουν 
+                  ακριβώς το ίδιο για εσένα και ,πορεί νακαταλήξεις με χειροπέδες!
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="column1">
+          <div class="flexbox-item flexbox-item-8">
+            <img
+              src="https://external.webstorage.gr/images/0810723/Monopoly-Junior-Hasbro-A6984-400-0810723.jpg "
+              alt="Classic Junior"
+              style="width: 100%"
+            />
+            <h4>Νέα Monopoly για παιδιά</h4>
+            <p>
+              Μέσα από τη Junnior έκδοση της κλασσικής Monopoly τα παιδιά
+              μαθαίνουν να κερδίζουν διασκεδαστικά! <br />
+              Μέτρα χρήματα, πάρε μετρητά και κέρδισε!
+            </p>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="flexbox-item flexbox-item-9">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1425245/epitrapezio-monopoly-lol-surprise-1000-1425245.jpg"
+              alt="LOL "
+              style="width: 100%"
+            />
+            <h4>L.O.L. Surprise</h4>
+            <p>
+              Αντί για τοποθεσίες και ιδιοκτησίες, σε αυτήν την έκδοση της
+              Monopoly, τη Monopoly: L.O.L. SURPRISE!, οι παίκτες αγοράζουν,
+              πουλούν και ανταλλάσσουν με τους άλλους παίκτες τις Κούκλες που
+              απεικονίζονται στο ταμπλό του παιχνιδιού, με στόχο να συλλέξουν
+              τις σπάνιες. Τις κάρτες Εντολή αντικαθιστούν οι κάρτες Έκπληξη!,
+              τα σπίτια και τα ξενοδοχεία αντικαθιστούν Αστεράκια και Emoji και
+              τα πιόνια είναι αυθεντικά αξεσουάρ L.O.L. Surprise! Doll. Τους
+              παίκτες περιμένει μια συναρπαστική έκπληξη όταν ξετυλίξουν τα
+              πιόνια.
+            </p>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="flexbox-item flexbox-item-10">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1283266/epitrapezio-monopoly-junior-ilektroniki-trapeza-hasbro-400-1283266.jpg "
+              alt="ElBank"
+              style="width: 100%"
+            />
+            <h4>Monopoly Junior Ηλεκτρονική Τράπεζα</h4>
+            <p>
+              ώρα η νέα Monopoly Junior διαθέτει ηλεκτρονική τραπεζική μονάδα
+              και πιστωτικές κάρτες που θα σε συναρπάσουν! Ταξίδεψε γύρω από το
+              ταμπλό αγοράζοντας ακίνητα, σηκώνοντας κάρτες εντολών και
+              κερδίζοντας χρήματα. Η τραπεζική μονάδα που συμπεριλαμβάνεται θα
+              σου προσφέρει ένα διασκεδαστικό παιχνίδι! Όταν κάποιος παίκτης
+              χρεοκοπήσει, φρόντισε να έχεις περισσότερα χρήματα από τους άλλους
+              παίκτες για να είσαι ο νικητής!
+            </p>
+          </div>
+        </div>
+        <div class="column4">
+          <div class="flexbox-item flexbox-item-11">
+            <img
+              src="https://static-v3.e-jumbo.gr/uploads/resources/145236/5010993394500_01-thumb.jpg?lm=1F886D428C96838F582A5A472CF4E9D9"
+              alt="CARS"
+              style="width: 100%"
+            />
+            <h4>Monopoly Junior CARS</h4>
+            <p>
+              Η νέα Monopoly Junior έφτασε και έχει σαν ταμπλό παιχνιδιού τα
+              αυτοκινητάκια από την ταινία CARS! Απέκτησε ιδιοκτησίες και γίνε ο
+              νικητής. Όταν κάποιος παίκτης δε θα έχει να πληρώσει κάποιον άλλον
+              ή να πληρώσει το αντίτιμο μιας κάρτας Εντολής τότε χάνει και
+              τελειώνει το παιχνίδι. Όταν συμβεί αυτό, ο παίκτης με τα
+              περισσότερα χρήματα είναι ο νικητής.
+            </p>
+          </div>
+        </div>
+        <div class="column5">
+          <div class="flexbox-item flexbox-item-12">
+            <img 
+              src="https://c.scdn.gr/images/sku_main_images/023326/23326688/xlarge_20200526103736_winning_moves_monopoly_spongebob_squarepants_english.jpeg"
+              alt="SpongeBob"
+              style="width: 100%"
+            />
+            <h4>Monopoly Μπομπ Σφουγγαράκης </h4>
+            <p>
+              Έλα να κάνεις μια βουτιά στον βυθό του Μπικίνι. Όσο ταξιδέυεις 
+              ιδιοκτησίες, αγόρασε ανανάδες και χτίσε τον Τραγνό Κάβουρα!
+              Μπορείς να μαζέψεις ακόμα και χρήματα ή μύδια από τους συμπαίκτες
+              σου όταν σταματούν στις ιδιοκτησίες σου. Αν έχεις όλα τα μύδια στο 
+              τέλος του παιχνιδιού, κερδίζεις!
+            </p>
+          </div>
+        </div>
+        <div class="column6">
+          <div class="flexbox-item flexbox-item-13">
+            <img 
+              src="https://a.scdn.gr/images/sku_main_images/026549/26549735/xlarge_20211105164518_hasbro_epitrapezio_paichnidi_monopoly_unicorns_vs_llamas_gia_2_6_paiktes_8_eton_e8760.jpeg"
+              alt="unic/llamas"
+              style="width: 100%"
+            />
+            <h4> Monopoly Unicorns vs. Llamas</h4>
+            <p>
+              Σε αυτή την παραλλαγή της κλασσικής MONOPOLY, μονόκεροι και λάμα ανταγωνίζονται
+              για να δουν ποιό είναι το πιό χαριτωμένο πλάσμα. Αντί να αγοράζουν τίτλους 
+              ιδιοκτησίας, οι παίκτες αγοράζουν τίτλους όπως "πιό χαριτωμένος", ή "πιό γλυκά 
+              μωρά". Οι παίκτες θα περάσουν καλύτερα από ποτέ προσπαθώντας να αποδείξουν ότι 
+              οι χνουδωτοί τους φίλοι είναι οι καλύτεροι!
+            </p>
+          </div>
+        </div>
+        <div class="column7">
+          <div class="flexbox-item flexbox-item-14">
+            <img 
+              src="https://a.scdn.gr/images/sku_main_images/027399/27399237/xlarge_20210311140545_hasbro_monopoly_junior_peppa_pig.jpeg"
+              alt=" Peppa"
+              style="width: 100%"
+            />
+            <h4>Monopoly Junior Peppa Pig </h4>
+            <p>
+              Οι παίκτες μετακινούν τις φιγούρες Peppa Pig, George Pig, Mummy Pig ή 
+              Daddy Pig γύρω από το ταμπλό, αγοράζοντας ακίνητα όπως το Snowy Mountain,
+              το Peppa's House και το Grandpa Pig's Garden. Τα παιδιά μπορούν να 
+              εξασκήσουν τις δεξιότητες καταμέτρησής τους καθώς μετράνε τα χρήματα τους
+              σε όλο το παιχνίδι. Ένα επιτραπέζιο που έχει σχεδιαστεί για παιδιά ηλικίας
+              5 ετών και άνω και αποτελεί μία καλή εισαγωγή στο κλασικό παιχνίδι Monopoly!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="column1">
+          <div class="flexbox-item flxox-item-15">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1390322/epitrapezio-painhidi-monopoly-fortnite-1000-1390322.jpg"
+              alt="Fortnite"
+              style="width: 100%"
+            />
+            <h4>Fortnite edition</h4>
+            <p>
+              Σε αυτή τη συναρπαστική Fortnite έκδοση του παιχνιδιού Monopoly,
+              οι παίκτες διεκδικούν τοποθεσίες, παλεύουν τους αντιπάλους τους
+              και αποφεύγουν την Καταιγίδα-Storm. Ο τρόπος παιχνιδιού και ο
+              σχεδιασμός του επιτραπέζιου περιλαμβάνουν στοιχεία εμπνευσμένα από
+              το βιντεοπαιχνίδι, συμπεριλαμβανομένων των τοποθεσιών Fortnite και
+              των καρτών με καλούδια. Αντί για χρήματα Monopoly, οι παίκτες
+              κερδίζουν μάρκες πόντων ζωής (HP).
+            </p>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="flexbox-item flexbox-item-16">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1595238/epitrapezio-monopoly-lord-of-the-rings-1000-1595238.jpg"
+              alt="LotR"
+              style="width: 100%"
+            />
+            <h4>Lord of the Rings Edition</h4>
+            <p>
+              Στο Επιτραπέζιο Monopoly The Lord of the Rings οι παίκτες
+              φαντάζονται να βρίσκονται στη Μέση Γη ως ένας από την Κοινότητα.
+              Αγοράστε ακίνητα για να προστατέψετε τα εδάφη από τους κακούς
+              στρατούς του Μόρντορ και κερδίστε χρήματα χρεώνοντας ενοίκιο και
+              ελέγχοντας το δαχτυλίδι της εξουσίας.
+            </p>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="flexbox-item flexbox-item-17">
+            <img
+              src="https://external.webstorage.gr/Product-Images/1538513/epitrapezio-monopoly-arcade-pacman-400-1538513.jpg "
+              alt="PacMan"
+              style="width: 80%"
+            />
+            <h4>Monopoly Arcade PacMan</h4>
+            <p>
+              Οι gamers και οι οπαδοί του Pac-Man θα ξαναζήσουν την εμπειρία με
+              αυτή την Monopoly εμπνευσμένη από το αυθεντικό Pac-Man! Στο
+              επιτραπέζιο παιχνίδι Monopoly Arcade Pac-Man οι παίκτες παίζουν
+              Pac-Man και συναγωνίζονται γύρω από το ρετρό ταμπλό (προσοχή στο
+              Φάντασμα!) για να κερδίσουν πόντους! Κάθε φορά που ένας παίκτης
+              περνάει από την αφετηρία πρέπει να παίξει ένα μίνι παιχνίδι του
+              Pac-Man.
+            </p>
+          </div>
+        </div>
+        <div class="column4">
+          <div class="flexbox-item flexbox-item-18">
+            <img
+              src="https://a.scdn.gr/images/sku_main_images/019131/19131131/xlarge_20190620164507_hasbro_monopoly_game_of_thrones.jpeg "
+              alt="GoT"
+              style="width: 100%"
+            />
+            <h4>Monopoly Game of Thrones</h4>
+            <p>
+              Η κλασική MONOPOLY τώρα διαθέσιμη και για τους fans του Game of
+              Thrones σε ειδική έκδοση με ειδικό ταμπλό, πούλια & περιοχές για
+              να ζήσετε την πλήρη εμπειρία της σειράς! Ιδανικό δώρο για τους
+              φίλους της σειράς!
+            </p>
+          </div>
+        </div>
+        <div class="column5">
+          <div class="flexbox-item flexbox-item-19">
+            <img
+              src="https://b.scdn.gr/images/sku_main_images/017184/17184762/xlarge_20211206102807_winning_moves_epitrapezio_paichnidi_monopoly_friends_gia_2_6_paiktes_8_eton_027229.jpeg "
+              alt="friends"
+              style="width: 100%"
+            />
+            <h4>Monopoly Friends</h4>
+            <p>
+              Ήρθε η ώρα να βρεθείτε μαζί με τους θρυλικούς Friends! Παίξε με τον Ross,
+              την Rachel, την Phoebe, την Monica, τον Joey ή τον Chandler χρησιμοποιώντας
+              πιόνια τα οποία είναι σημαντικά για τον καθέναν: την τσάντα της Rachel,
+              τον δεινόσαυρο του Ross, τα πουλόβερ του Chandler, και την κιθάρα της
+              Phoebe. Κάνετε pi-VOT στο ταμπλό και θυμηθείτε πάλι τις καλύτερες στιγμές
+              στην ιστορία της σειράς, από το Holiday Armadillo, μέχρι και τον
+              περιπετειώδη μα αξέχαστο γάμο της Monica & του Chandler!
+            </p>
+          </div>
+        </div>
+        <div class="column6">
+          <div class="flexbox-item flexbox-item-20">
+            <img 
+              src="https://b.scdn.gr/images/sku_main_images/013804/13804478/xlarge_20180117101117_hasbro_monopoly_deadpool.jpeg"
+              alt="deadpool"
+              style="width:100%"
+            />
+            <h4>Monopoly Deadpool</h4>
+            <p>
+              Ο Deadpool συναντά τη Monopoly και κάνουν τον τέλειο συνδυασμό! Στο παιχνίδι 
+              Monopoly: Deadpool Edition οι παίκτες κατασκευάζουν τη δική τους ομάδα Mercs 
+              για χρήματα καθώς αγοράζουν τα συμβόλαια των καλύτερων μισθοφόρων του κόσμου. 
+              Κάποιοι είναι οι σύμμαχοι του Deadpool και άλλοι είναι Deadpools από εναλλασσόμενα 
+              σύμπαντα. Οι παίκτες πρέπει να πληρώσουν όταν σταματάνε στα Mercs. Ετοιμαστείτε 
+              για μία διαφορετική Monopoly που θα ενθουσιάσει τους Deadpool fans!
+            </p>
+          </div>
+        </div>
+        <div class="column7">
+          <div class="flexbox-item flexbox-item-21">
+            <img
+              src="https://a.scdn.gr/images/sku_main_images/008105/8105861/xlarge_20151223142741_winning_moves_monopoly_the_big_bang_theory.jpeg "
+              alt="tBBT"
+              style=" width: 100%"
+            />
+            <h4>Monopoly: The Big Bang Theory </h4>
+            <p> 
+              Ταξίδεψε στους δρόμους της Πασαντίνα με τη νέα έκδοση της MONOPOLY.
+              Διάλεξε ένα από τα επτά συλλεκτικά πιόνα τα οποία περιλαμβάνουν τη θέση 
+              του Σέλντον και τα γυαλιά του Λέοναρντ και αγόρασε τοποθεσίες όπως το 
+              διαμέρισμα του Λέοναρντ και του Σέλντον ή το σπίτι της κυρίας Γουόλοβιτς!
+              Κορόιδεψε τους φίλους σου όπως ο Σέλντον όταν πατούν στις ιδιοκτησίες σου
+              και κέρδισε! 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Σοφία Σωτηρίου | Μαριάννα Μπελεγράτη | Αριάδνη Γιαννακοπούλου || 2021
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+
+.header-img {
+    width: 50%;
+    height: 150px;
+    background: url(logo.png);
+    background-size: cover;
+    float: none;
+    align-self: center;
+    margin-left: 400px;
+    margin-bottom: 5px;
+  }
+
+  body {
+      background-image: url(background2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+  }
+
+footer {
+  position: relative;
+  border-radius: 4px;
+  margin-top: 50px;
+  border: 3px inset rgb(204, 35, 35);
+  background-color:  rgba(204, 35, 35);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+.aligned {
+  display: flex;
+  align-items: center;
+}
+
+.a_img {
+  margin-top:10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;  
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.if1 {
+  margin-top:10px;
+  margin-left: 150px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+  background-color: rgba(204, 35, 35, 0.61);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+table {
+  padding: 3px;
+}
+
+.pMAIN {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  background-color: black;
+  text-align: center;
+  padding: 16.5px;
+  text-decoration: none;
+  font-size: 24px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  background-color: rgb(204, 35, 35);
+  color: white;
+
+}
+
+.topnav a.active { 
+  background-color: rgb(204, 35, 35);
+  color: white;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  padding-left: 15px;
+
+}
+
+.h2TIPS {
+  border:2px solid rgb(204, 35, 35);
+  background-color: #ffffffb4;
+  padding-left: 10px;
+  margin-right: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:15px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding-right:10px;
+  text-align: center;
+}
+
+.h2VERSIONS {
+  border:2px solid rgb(204, 35, 35);
+  background-color: #ffffffb4;
+  padding-left: 10px;
+  margin-right: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:15px;
+  margin-top: 20px;
+  margin-left: 366px;
+  margin-bottom: 10px;
+  margin-right: 65px;
+  border-radius: 4px;
+  padding-right:10px;
+  text-align: center;
+}
+
+
+.special-edition {
+  float: left;
+  position: sticky;
+  top: 40px;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  margin-left: 5px;
+  margin-right: 7px;
+  width: 18%;
+  padding: 10px;
+  background-color: rgba(204, 35, 35, 0.767);
+  text-align: center;
+  background-blend-mode: lighten;
+}
+
+.versions-links {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.versions-links a:hover {
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+}
+
+.versions-links a:active {
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+}
+
+.flexbox-container-ver {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-left: 300px;
+}
+
+.flexbox-item-ver {
+  width: 320px;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  border: 3px solid rgba(204, 35, 35, 0.815);
+  background-color: #ffffffb4;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.flexbox-container-ver img {
+  width: 320px;
+  height: 200px;
+}
+
+.flexbox-container-inst {
+  display: flex;
+  width: 99%;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.flexbox-item-inst {
+    width: 99%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgba(204, 35, 35, 0.815);
+    background-color: #ffffffb4;
+    border-radius: 4px;
+    text-align: left;
+    padding: 10px;
+   
+}
+
+.flexbox-item-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-start;  
+    flex-direction: row;
+}
+
+
+.afethria-S {
+    height: 200px;
+    width: 300px;
+    float: right;
+}
+
+.flexbox-item-inst-6 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: flex-start;  
+  flex-direction: row;
+}
+
+.chance-img {
+  height: 200px;
+  width: 300px;
+  float: right;
+}
+
+.jail-img-S {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  height: 200px;
+  width: 300px;
+}
+
+.jail-txt{
+  text-align: left;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.jail-img-S {
+  float: right;
+  margin: 5px;
+  margin-left: 3px;
+  height: 200px;
+  width: 300px;
+}
+
+.house-txt{
+  text-align: right;
+  position: relative;
+}
+
+.houses-S {
+  float: right;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  height: 245px;
+  width: 400px;
+}
+
+ol li {
+  text-align:justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  
+}
+
+.INST-titles {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+}
+
+.bord {
+  border:2px solid rgb(204, 35, 35);
+  background-color: #ffffffb4;
+  border-radius: 4px;;
+}
+
+.if2 {
+  padding-left: 500px;
+  padding-bottom: 20px;
+}
+
+.m_img2 {
+  margin-left: 30%;
+  margin-right: 20%;
+  float:none;
+  position:relative;
+}
+
+.src {
+  text-align: center;
+  margin-left: 00px;
+}
+
+.src a:link {
+  color:rgb(204, 35, 35);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+}
+
+.src a:visited {
+  text-decoration: underline;;
+  color: black;;
+}
+
+.src a:hover {
+  text-decoration: wavy;
+  color: rgb(235, 65, 65);
+  
+}
+
+.m_img {
+  padding: 5px;
+  float: right;
+}
+
+.src a:active {
+  background-color: rgb(204, 35, 35);;
+  color: white;;
+}
+
+.piges {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+}
+
+
